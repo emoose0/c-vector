@@ -8,7 +8,7 @@ int main(){
 	int capacity = sizeof(array);
 	Vect* vecto = constructVect(array, count, capacity);
 
-	for(int i = 0; i<vecto->count; i++){
+	for(int i = 0; i<vecto->count; i++){ //Write elements
 		printf("Count: %d    Capacity: %d    Element: %d\n", vecto->count, vecto->capacity, vecto->Array[i]);
 	}
 	printf("\n\n Updated after adding 2 elements\n\n");
@@ -16,7 +16,7 @@ int main(){
 	addVect(vecto, 7);
 	addVect(vecto, 9);
 
-	for(int i = 0; i<vecto->count; i++){
+	for(int i = 0; i<vecto->count; i++){ //Write elements
 		printf("Count: %d    Capacity: %d    Element: %d\n", vecto->count, vecto->capacity, vecto->Array[i]);
 	}
 
@@ -24,7 +24,7 @@ int main(){
 
 	changeVect(54, 0, vecto);
 
-	for(int i = 0; i<vecto->count; i++){
+	for(int i = 0; i<vecto->count; i++){ //Write elements
 		printf("Count: %d    Capacity: %d    Element: %d\n", vecto->count, vecto->capacity, vecto->Array[i]);
 	}
 

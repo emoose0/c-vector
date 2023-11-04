@@ -36,7 +36,7 @@ int main(){
 		printf("Count: %d    Capacity: %d    Element: %d\n", vecto->count, vecto->capacity, vecto->Array[i]);
 	}
 	
-	
+	free(vecto);
 
 	return 0;
 }
